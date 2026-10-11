@@ -1,0 +1,75 @@
+.chat-card {
+  background: #111827;
+  padding: 15px;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+
+ 
+border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  background: linear-gradient(90deg, #3c3b3c, #6366f1);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(237, 235, 239, 0.7);
+  transition: 0.3s;
+}
+
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+    flex-direction: column;display: flex;scrollbar-width: none;   
+}
+
+.chat-message {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  max-width: 80%;
+    width: fit-content;       /* Makes bubble auto-size */
+          /* Prevents very long messages */
+  word-wrap: break-word;    /* Break long words */
+  white-space: pre-wrap;    /* Preserve formatting */
+
+}
+
+.chat-message.user {
+  background: #9bb0da;
+  align-self: flex-end;
+  
+}
+
+.chat-message.assistant {
+  background: #374151;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.chat-input button {
+  margin-left: 5px;
+  padding: 8px 12px;
+  border-radius: 80px;
+  border: none;
+  
+  background: #292e2d;
+  color: white;
+}
+.chat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(61, 60, 62);
+}

@@ -1,0 +1,55 @@
+.alerts-card {
+  background: rgba(20, 25, 40, 0.85);
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 20px rgba(225, 234, 234, 0.3);
+  max-height: 500px;
+  overflow-y: auto;
+   border: 2px solid rgb(81, 78, 82);
+}
+.alerts-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(239, 226, 250, 0.7);
+}
+/* Scanning animation */
+.scanning {
+  color: #4a90e2;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dot {
+  display: inline-block;
+  margin-left: 10px;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Alert styles */
+.alert {
+  background: rgba(0, 0, 0, 0.5);
+  border-left: 4px solid #0ff;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s;
+}
+
+.alert.low { border-color: #2ecc71; }
+.alert.medium { border-color: #f1c40f; }
+.alert.high { border-color: #e67e22; }
+.alert.critical { border-color: #fcfbfb; }
+
+.alert:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}

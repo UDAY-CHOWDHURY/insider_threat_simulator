@@ -1,0 +1,415 @@
+/* GLOBAL */
+
+.app-container {
+  min-height: 100vh;
+
+  /* Background image + gradient overlay */
+  background-image: 
+    url('/assets/pqr.png'), /* replace with your image path */
+      radial-gradient(circle at 30% 30%, rgba(177,177,188,0.3), rgba(11,12,20,0.6));
+  
+  background-blend-mode: overlay; /* blend gradient on top of image */
+  background-size: cover;         /* cover the whole container */
+  background-position: center;    /* center the image */
+  background-repeat: no-repeat;   /* no tiling */
+  background-attachment: fixed;   /* <-- makes it stay while scrolling */
+
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.logo {
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg,  #ffffff,#8a858a);background-clip: text;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;left: -80px;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.hero-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #0a0a0a, #6366f1);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(10, 10, 10, 0.7);
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(20, 20, 20);
+}
+
+.hero-right {
+  width: 40%;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard-container {
+  padding: 40px;
+}
+
+.dashboard-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.attack-graph {
+  margin-top: 30px;
+}
+
+
+/* CARD STYLE — apply to all components */
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px rgba(132, 63, 201, 0.15);
+}
+.animated-title {
+  font-family: 'Bauhaus', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255,255,255,0.75); /* cursor effect */
+  width: 0;
+  animation: typing 3s steps(30, end) forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes rollHorizontal {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: rgba(255,255,255,0.75); }
+}
+.risk-card {
+  background: rgba(20, 25, 40, 0.8); /* semi-transparent dark panel */
+  border: 2px solid rgb(248, 247, 248);             /* neon cyan border */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(225, 234, 234, 0.3); /* subtle glow */
+  backdrop-filter: blur(6px);        /* glass effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.calendar-card {
+  background: rgba(20, 25, 40, 0.8);
+  border: 2px solid rgb(253, 250, 255);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(225, 234, 234, 0.3);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.calendar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 253, 255, 0.3);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: rgb(18, 18, 18);
+  font-family: "Orbitron", sans-serif;
+}
+
+.calendar-header button {
+  background: transparent;
+  border: 1px solid rgb(252, 252, 252);
+  color: rgb(5, 5, 5);
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.calendar-header button:hover {
+  background: rgb(219, 223, 223);
+  color: #141928;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-weekday {
+  font-weight: bold;
+  color: rgb(250, 248, 248);
+  text-shadow: 0 0 6px rgb(4, 4, 4);
+}
+
+.calendar-day {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #72687c;
+  border-radius: 6px;
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.calendar-day:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px #9d8b8b, 0 0 20px #f9f5f5;
+}
+
+.calendar-day.today {
+  color: #ff4d4d;
+  font-weight: bold;
+  box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff1a1a;
+}
+.risk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 253, 255, 0.3);
+}
+
+.risk-card h2 {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(217, 224, 224);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.risk-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff4d4d;           /* high risk in neon red */
+  text-shadow: 0 0 8px #ff4d4d, 0 0 20px #ff1a1a;
+  margin-bottom: 10px;
+}
+.chat-card {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.chat-window {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.chat-message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.chat-message.bot {
+  background: #2c2c44;
+}
+
+.chat-message.user {
+  background: #4e73df;
+  text-align: right;
+}
+.risk-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0;
+}
+.session-card {
+  background: rgba(20, 25, 40, 0.8); /* dark semi-transparent panel */
+  border: 2px solid rgb(244, 243, 245);            /* neon cyan border */
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 20px rgba(225, 234, 234, 0.3);
+  max-height: 300px;                  /* optional, scroll if too long */
+  overflow-y: auto;
+}
+.session-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(244, 244, 244, 0.3);
+}
+
+.session-card h2 {
+  color: #0ff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.session-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.session-card li {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.session-card li:hover {
+  color: #0ff; /* highlight on hover */
+}
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/assets/pqr.png"); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px white;
+}
+
+/* Transparent login box */
+.login-box {
+  background-color:transparent; /* semi-transparent */
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(171, 168, 168, 0.917);
+ 
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+ 
+}
+
+.login-box button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #e9dcdc;;
+  background-color: #3e3e3e;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #6c686e;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+.log-window {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 400px;
+  max-height: 70%;
+  background: #1b1b1b;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0ff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.log-header button {
+  background: transparent;
+  border: none;
+  color: #0ff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.log-entries {
+  font-size: 0.9em;
+}
+
+.log-entry.critical {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

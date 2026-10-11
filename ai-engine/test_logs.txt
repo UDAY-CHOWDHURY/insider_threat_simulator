@@ -1,0 +1,16 @@
+2026-02-25 21:39:42.185297 | C:/Users/DELL/Desktop\DOCMY\PROJECTS\INSIDERAU\insidesoc\ai-engine\alerts_log.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-02-25 21:42:23.943598 | C:/Users/DELL/TestFolder1\New Text Document (8).txt CREATION | Risk: 80 | Severity: High
+2026-02-25 21:43:23.305437 | C:/Users/DELL/TestFolder1\New Text Document (8).txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-02-25 21:43:58.250848 | C:/Users/DELL/TestFolder1\New Text Document (8).txt DELETION | Risk: 100 | Severity: Critical
+2026-02-25 21:43:59.432850 | C:/Users/DELL/Desktop\New Text Document (8).txt CREATION | Risk: 80 | Severity: High
+2026-02-26 21:43:59.775156 | C:/Users/DELL/Desktop\New Text Document (8).txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-02-26 21:44:53.966676 | C:/Users/DELL/Desktop\New Text Document (4).txt CREATION | Risk: 80 | Severity: High
+2026-02-26 21:52:44.954204 | C:/Users/DELL/TestFolder1\New Text Document (4).txt CREATION | Risk: 80 | Severity: High
+2026-02-26 21:52:59.377300 | C:/Users/DELL/TestFolder1\New Text Document (4).txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-02-26 21:53:09.791713 | C:/Users/DELL/TestFolder1\New Text Document (4).txt DELETION | Risk: 100 | Severity: Critical
+2026-02-26 21:54:07.865771 | C:/Users/DELL/TestFolder1\New Text Document (3).txt CREATION | Risk: 80 | Severity: High
+2026-02-27 21:55:12.210550 | C:/Users/DELL/TestFolder1\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-02-27 21:55:37.173851 | C:/Users/DELL/TestFolder1\New Text Document (2).txt CREATION | Risk: 80 | Severity: High
+2026-02-27 21:55:50.747499 | C:/Users/DELL/TestFolder1\New Text Document (2).txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-02-27 21:56:16.982348 | C:/Users/DELL/TestFolder1\New Text Document (2).txt DELETION | Risk: 100 | Severity: Critical
+2026-02-27 21:56:31.852164 | C:/Users/DELL/TestFolder1\New Text Document (3).txt DELETION | Risk: 100 | Severity: Critical

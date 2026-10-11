@@ -1,0 +1,29 @@
+
+2026-05-01 17:49:51.994250 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-01 17:49:56.014388 | C:/Users/DELL/Downloads\New Text Document.txt MOVED to C:/Users/DELL/Downloads\ght.txt | Risk: 90 | Severity: Critical
+2026-05-01 17:50:04.353742 | C:/Users/DELL/Downloads\ght.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-01 17:50:14.386752 | C:/Users/DELL/Downloads\ght.txt DELETION | Risk: 100 | Severity: Critical
+2026-05-01 17:56:02.480527 | C:/Users/DELL/Desktop\DOCMY\PROJECTS\INSIDERAU\insidesoc\server\temp_logs.txt CREATION | Risk: 80 | Severity: High
+2026-05-01 17:56:04.047220 | C:/Users/DELL/Desktop\DOCMY\PROJECTS\INSIDERAU\insidesoc\server\temp_logs.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-08 17:06:40.185235 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-08 17:06:42.841974 | C:/Users/DELL/Downloads\New Text Document.txt MOVED to C:/Users/DELL/Downloads\ght.txt | Risk: 90 | Severity: Critical
+2026-05-08 17:06:56.585171 | C:/Users/DELL/Downloads\ght.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-08 17:07:00.935320 | C:/Users/DELL/Downloads\ght.txt DELETION | Risk: 100 | Severity: Critical
+2026-05-11 16:59:04.910533 | C:/Users/DELL/Documents\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-11 16:59:10.465445 | C:/Users/DELL/Documents\New Text Document.txt MOVED to C:/Users/DELL/Documents\abcde.txt | Risk: 90 | Severity: Critical
+2026-05-11 16:59:19.119395 | C:/Users/DELL/Documents\abcde.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-11 16:59:25.804283 | C:/Users/DELL/Documents\abcde.txt DELETION | Risk: 100 | Severity: Critical
+2026-05-14 20:40:22.573671 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-14 20:40:28.932893 | C:/Users/DELL/Downloads\New Text Document.txt MOVED to C:/Users/DELL/Downloads\testing.txt | Risk: 90 | Severity: Critical
+2026-05-14 20:40:37.144816 | C:/Users/DELL/Downloads\testing.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-14 20:40:40.769613 | C:/Users/DELL/Downloads\testing.txt DELETION | Risk: 100 | Severity: Critical
+2026-05-15 08:55:37.697023 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-15 08:55:44.481590 | C:/Users/DELL/Downloads\New Text Document.txt MOVED to C:/Users/DELL/Downloads\review.txt | Risk: 90 | Severity: Critical
+2026-05-15 08:55:53.200426 | C:/Users/DELL/Downloads\review.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-15 08:56:01.551273 | C:/Users/DELL/Downloads\review.txt DELETION | Risk: 100 | Severity: Critical
+2026-05-31 15:10:27.134131 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-31 15:10:43.251762 | C:/Users/DELL/Downloads\New Text Document.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-31 15:10:46.189752 | C:/Users/DELL/Downloads\New Text Document.txt DELETION | Risk: 100 | Severity: Critical
+2026-06-15 21:28:25.570202 | C:/Users/DELL/Documents\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-06-15 21:28:35.126284 | C:/Users/DELL/Documents\New Text Document.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-06-15 21:28:40.180406 | C:/Users/DELL/Documents\New Text Document.txt DELETION | Risk: 100 | Severity: Critical

@@ -1,0 +1,4 @@
+2026-05-01 17:49:51.994250 | C:/Users/DELL/Downloads\New Text Document.txt CREATION | Risk: 80 | Severity: High
+2026-05-01 17:49:56.014388 | C:/Users/DELL/Downloads\New Text Document.txt MOVED to C:/Users/DELL/Downloads\ght.txt | Risk: 90 | Severity: Critical
+2026-05-01 17:50:04.353742 | C:/Users/DELL/Downloads\ght.txt MODIFICATION | Risk: 95 | Severity: Critical
+2026-05-01 17:50:14.386752 | C:/Users/DELL/Downloads\ght.txt DELETION | Risk: 100 | Severity: Critical
